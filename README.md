@@ -62,3 +62,9 @@ This is notebook on Mechanical Engineering, Department of Mechanical CAD Design 
       </td>
     </tr>
   </table>
+
+### version info
+
+#### [2021-10-11](https://github.com/UtusemiUltimate-of-the-darkness/survey-of-Electric-notebook/tree/2021-10-11)
+
+- 2.1.1. Ohm's law
