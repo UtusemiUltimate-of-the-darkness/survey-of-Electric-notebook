@@ -1,6 +1,6 @@
-# Notebook-on-MechanicalEngineeringII
+# survey of Electric notebook
 
-This is notebook on Mechanical Engineering, Department of Mechanical CAD Design at Tohoku Electronics College.
+This is notebook on Survey of Electric, Department of Mechanical CAD Design at Tohoku Electronics College.
 
 ## How to use this Notebook
 
