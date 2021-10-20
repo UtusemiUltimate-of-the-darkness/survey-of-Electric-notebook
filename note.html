@@ -97,6 +97,19 @@
         font-style: italic;
       }
 
+      div.part div.chapter div.section table.auxUnit {
+
+        border-collapse : collapse;
+      }
+
+      div.part div.chapter div.section table.auxUnit tr th,
+      div.part div.chapter div.section table.auxUnit tr td {
+
+        border : solid 1px #E5B217;
+        padding : 0.2em 0.5em;
+        text-align : center;
+      }
+
     </style>
   </head>
 
@@ -131,7 +144,204 @@
               と表せる．
             </p>
           </div>
-        </div>
+          <div class="section">
+            <h5>オームの法則を用いた問題</h5>
+            <ol>
+              <li>
+                <div class="que question">
+                抵抗Rが50<span class="unit ohm Omega">&#937;</span>とすると，この抵抗に3<span class="unit ampre">A</span>の電流を流すためには何<span class="unit volt">V</span>の電圧を加えれば良いか
+                </div>
+                <div class="que ans formula">
+                  <table>
+                    <tr>
+                      <td>V</td>
+                      <td>=</td>
+                      <td>RI</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td>50 x 3</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td><u>150 <span class="unit volt">V</span></u></td>
+                    </tr>
+                  </table>
+                </div>
+              </li>
+              <li>
+                <div class="que question">
+                  電圧12<span class="unit volt">V</span>，流れる電流<span class="simbol current">I</span>が2<span class="unit ampere">A</span>とすると，この回路の抵抗値を求めよ
+                </div>
+                <div class="que ans formula">
+                  <table>
+                    <tr>
+                      <td>R</td>
+                      <td>=</td>
+                      <td>V / I</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td>12 / 2</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td><u>6 <span class="unit Omega">&#937;</span></u></td>
+                    </tr>
+                  </table>
+                </div>
+              </li>
+              <li>
+                <div class="que question">
+                  20<span class="unit Omega"></span>の抵抗に100<span class="unit volt">V</span>の電圧を加えると，流れる電流はいくらか．
+                </div>
+                <div class="que ans formula">
+                  <table>
+                    <tr>
+                      <td>I</td>
+                      <td>=</td>
+                      <td>V / R</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td>100 / 20</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td><u>5 <span class="unit ampere">A</span></u></td>
+                    </tr>
+                  </table>
+                </div>
+              </li>
+            </ol>
+          </div><!-- section -->
+          <div class="section">
+            <h5>補助単位</h5>
+            <div class="description">
+              回路や情報処理の世界では扱うデータの大きさが，非常に大きな値から，非常に小さな値を扱う．そこで，補助単位を用いることで，わかりやすい値となる．
+            </div>
+            <table class="auxUnit">
+              <tr>
+                <th>単位</th>
+                <td>p</td>
+                <td>n</td>
+                <td>&micro;</td>
+                <td>m</td>
+                <td>k</td>
+                <td>M</td>
+                <td>G</td>
+                <td>T</td>
+                <td>P</td>
+              </tr>
+              <tr>
+                <th>読み</th>
+                <td>ピコ</td>
+                <td>ナノ</td>
+                <td>マイクロ</td>
+                <td>ミリ</td>
+                <td>キロ</td>
+                <td>メガ</td>
+                <td>ギガ</td>
+                <td>テラ</td>
+                <td>ペタ</td>
+              </tr>
+              <tr>
+                <th>指数</th>
+                <td>10<sup>-12</sup></td>
+                <td>10<sup>-9</sup></td>
+                <td>10<sup>-6</sup></td>
+                <td>10<sup>-3</sup></td>
+                <td>10<sup>3</sup></td>
+                <td>10<sup>6</sup></td>
+                <td>10<sup>9</sup></td>
+                <td>10<sup>12</sup></td>
+                <td>10<sup>15</sup></td>
+              </tr>
+            </table>
+            <ol>
+              <li>
+                <div class="que question">
+                  次の単位を指定した単位で表しなさい．
+                </div>
+                <ol>
+                  <li>
+                    0.003 <span class="unit volt">V</span> = 3 <span class="unit mill-volt">mV</span> = 3000 <span class="unit micro-volt">&micro;V</span>
+                  </li>
+                  <li>
+                    470000 <span class="unit Omega">&#937;</span> = 470 <span class="unit kOhm">k&#937;</span> = 0.47 <span class="unit megaOhm">M&#937;</span>
+                  </li>
+                  <li>
+                    10 <span class="unit ampere">A</span> = 10000 <span class="unit millAmpere">mA</span> = 0.01 <span class="unit kAmpere">kA</span>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <div class="que question">
+                  抵抗Rが4 <span class="unit kOhm">k&#937;</span>で，これに100 <span class="unit volt">V</span>の電圧を加えた時，流れる電流を求めよ．
+                </div>
+                <div class="que ans">
+                  <table>
+                    <tr>
+                      <td>I</td>
+                      <td>=</td>
+                      <td>V / R</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td>100 / ( 4 &times; 10<sup>3</sup> )</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td>0.025</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td>25 <span class="unit millAmpere">mA</span>
+                    </tr>
+                  </table>
+                </div>
+              </li>
+              <li>
+                <div class="que question">
+                  回路の電圧が12 <span class="unit volt">V</span>で，流れる電流が3 <span class="unit millAmpere">mA</span>の時，この回路の抵抗値を求めよ．
+                </div>
+                <div class="que ans">
+                  <table>
+                    <tr>
+                      <td>R</td>
+                      <td>=</td>
+                      <td>V / I</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td>12 / ( 3 &times; 10<sup>-3</sup> )</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td>4000</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td>4 <span class="unit kOhm">k&#937;</span></td>
+                    </tr>
+                  </table>
+                </div>
+              </li>
+            </ul>
+          </div><!-- section -->
+        </div><!-- chapter -->
       </div><!-- part -->
     </div>  <!-- htmlWrap -->
     <!-- chapter-section-subsection-subsubsection-item-contents -->
