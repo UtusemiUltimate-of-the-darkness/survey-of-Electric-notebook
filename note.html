@@ -78,22 +78,21 @@
         padding-left : 1.5em;
       }
 
-      table .alignRight {
+      .align-left {
 
-        text-align : right;
+        text-align : left;
       }
-      table .alignCenter {
+      .align-center {
 
         text-align : center;
       }
-      table .alignLeft {
+      table .align-right {
 
-        text-align : left;
+        text-align : right;
       }
 
       .formula {
 
-        text-align: center;
         font-style: italic;
       }
 
@@ -139,7 +138,7 @@
             <p>
               閉回路に電圧を印加すると電流が流れるが，この電気回路に流れる電流は電圧に比例し，回路の抵抗に反比例する．これを<strong>オームの法則</strong>という．オームの法則を数式で表すと，
             </p>
-            <div class="formula">V = RI</div>
+            <div class="formula align-center">V = RI</div>
             <p>
               と表せる．
             </p>
@@ -149,7 +148,7 @@
             <ol>
               <li>
                 <div class="que question">
-                抵抗Rが50<span class="unit ohm Omega">&#937;</span>とすると，この抵抗に3<span class="unit ampre">A</span>の電流を流すためには何<span class="unit volt">V</span>の電圧を加えれば良いか
+                  抵抗<span class="formula">R</span>が<span class="formula">50<span class="unit ohm Omega">&#937;</span></span>とすると，この抵抗に<span class="formula">3<span class="unit ampre">A</span></span>の電流を流すためには何<span class="formula"><span class="unit volt">V</span></span>の電圧を加えれば良いか
                 </div>
                 <div class="que ans formula">
                   <table>
@@ -161,7 +160,7 @@
                     <tr>
                       <td></td>
                       <td>=</td>
-                      <td>50 x 3</td>
+                      <td>50 &times; 3</td>
                     </tr>
                     <tr>
                       <td></td>
@@ -173,7 +172,7 @@
               </li>
               <li>
                 <div class="que question">
-                  電圧12<span class="unit volt">V</span>，流れる電流<span class="simbol current">I</span>が2<span class="unit ampere">A</span>とすると，この回路の抵抗値を求めよ
+                  電圧<span class="formula">12<span class="unit volt">V</span></span>，流れる電流<span class="formula"><span class="simbol current">I</span></span>が<span class="formula">2<span class="unit ampere">A</span></span>とすると，この回路の抵抗値を求めよ
                 </div>
                 <div class="que ans formula">
                   <table>
@@ -197,7 +196,7 @@
               </li>
               <li>
                 <div class="que question">
-                  20<span class="unit Omega"></span>の抵抗に100<span class="unit volt">V</span>の電圧を加えると，流れる電流はいくらか．
+                  <span class="formula">20<span class="unit Omega">&#937;</span></span>の抵抗に<span class="formula">100<span class="unit volt">V</span></span>の電圧を加えると，流れる電流はいくらか．
                 </div>
                 <div class="que ans formula">
                   <table>
@@ -227,17 +226,18 @@
               回路や情報処理の世界では扱うデータの大きさが，非常に大きな値から，非常に小さな値を扱う．そこで，補助単位を用いることで，わかりやすい値となる．
             </div>
             <table class="auxUnit">
+              <caption><span class="tblNum"></span>補助単位</caption>
               <tr>
                 <th>単位</th>
-                <td>p</td>
-                <td>n</td>
-                <td>&micro;</td>
-                <td>m</td>
-                <td>k</td>
-                <td>M</td>
-                <td>G</td>
-                <td>T</td>
-                <td>P</td>
+                <td class="formula">p</td>
+                <td class="formula">n</td>
+                <td class="formula">&micro;</td>
+                <td class="formula">m</td>
+                <td class="formula">k</td>
+                <td class="formula">M</td>
+                <td class="formula">G</td>
+                <td class="formula">T</td>
+                <td class="formula">P</td>
               </tr>
               <tr>
                 <th>読み</th>
@@ -253,15 +253,15 @@
               </tr>
               <tr>
                 <th>指数</th>
-                <td>10<sup>-12</sup></td>
-                <td>10<sup>-9</sup></td>
-                <td>10<sup>-6</sup></td>
-                <td>10<sup>-3</sup></td>
-                <td>10<sup>3</sup></td>
-                <td>10<sup>6</sup></td>
-                <td>10<sup>9</sup></td>
-                <td>10<sup>12</sup></td>
-                <td>10<sup>15</sup></td>
+                <td class="formula">10<sup>-12</sup></td>
+                <td class="formula">10<sup>-9</sup></td>
+                <td class="formula">10<sup>-6</sup></td>
+                <td class="formula">10<sup>-3</sup></td>
+                <td class="formula">10<sup>3</sup></td>
+                <td class="formula">10<sup>6</sup></td>
+                <td class="formula">10<sup>9</sup></td>
+                <td class="formula">10<sup>12</sup></td>
+                <td class="formula">10<sup>15</sup></td>
               </tr>
             </table>
             <ol>
@@ -271,22 +271,22 @@
                 </div>
                 <ol>
                   <li>
-                    0.003 <span class="unit volt">V</span> = 3 <span class="unit mill-volt">mV</span> = 3000 <span class="unit micro-volt">&micro;V</span>
+                    <span class="formula">0.003 <span class="unit volt">V</span> = 3 <span class="unit mill-volt">mV</span> = 3000 <span class="unit micro-volt">&micro;V</span></span>
                   </li>
                   <li>
-                    470000 <span class="unit Omega">&#937;</span> = 470 <span class="unit kOhm">k&#937;</span> = 0.47 <span class="unit megaOhm">M&#937;</span>
+                    <span class="formula">470000 <span class="unit Omega">&#937;</span> = 470 <span class="unit kOhm">k&#937;</span> = 0.47 <span class="unit megaOhm">M&#937;</span></span>
                   </li>
                   <li>
-                    10 <span class="unit ampere">A</span> = 10000 <span class="unit millAmpere">mA</span> = 0.01 <span class="unit kAmpere">kA</span>
+                    <span class="formula">10 <span class="unit ampere">A</span> = 10000 <span class="unit millAmpere">mA</span> = 0.01 <span class="unit kAmpere">kA</span></span>
                   </li>
                 </ol>
               </li>
               <li>
                 <div class="que question">
-                  抵抗Rが4 <span class="unit kOhm">k&#937;</span>で，これに100 <span class="unit volt">V</span>の電圧を加えた時，流れる電流を求めよ．
+                  抵抗<span class="formula">R</span>が<span class="formula">4<span class="unit kOhm">k&#937;</span></span>で，これに<span class="formula">100 <span class="unit volt">V</span></span>の電圧を加えた時，流れる電流を求めよ．
                 </div>
                 <div class="que ans">
-                  <table>
+                  <table class="formula align-left">
                     <tr>
                       <td>I</td>
                       <td>=</td>
@@ -312,10 +312,10 @@
               </li>
               <li>
                 <div class="que question">
-                  回路の電圧が12 <span class="unit volt">V</span>で，流れる電流が3 <span class="unit millAmpere">mA</span>の時，この回路の抵抗値を求めよ．
+                  回路の電圧が<span class="formula">12 <span class="unit volt">V</span></span>で，流れる電流が<span class="formula">3 <span class="unit millAmpere">mA</span></span>の時，この回路の抵抗値を求めよ．
                 </div>
                 <div class="que ans">
-                  <table>
+                  <table class="formula align-left">
                     <tr>
                       <td>R</td>
                       <td>=</td>
@@ -342,6 +342,246 @@
             </ul>
           </div><!-- section -->
         </div><!-- chapter -->
+        <div class="chapter">
+          <h3 class="title chapter">第4章 抵抗の直列接続と並列接続</h3>
+          <div class="section">
+            <h4 class-"title section">抵抗の直列接続</h4>
+            複数の抵抗を下図のように接続した回路を直列接続という．<br>
+            <figure>
+              <img src="sch/img/01.png" width="300px">
+              <figcaption><span class="figNum"></span>直列回路例</figcaption>
+            </figure>
+            抵抗を2つ以上接続した時の全体の抵抗を<strong>合成抵抗</strong>という．合成抵抗を<span class="formula">R<sub>0</sub></span>とすると，合成抵抗<span class="formula">&thinsp;R<sub>0</sub> = R<sub>1</sub> + R<sub>2</sub>&thinsp;</span>となる．
+            また，各抵抗の両端に発生する電圧を<strong>電圧降下</strong>という．
+            <table class="formula align-left">
+              <tr>
+                <td>V<sub>1</sub></td>
+                <td>=</td>
+                <td>R<sub>1</sub>I</td>
+              </tr>
+              <tr>
+                <td>V<sub>2</sub></td>
+                <td>=</td>
+                <td>R<sub>2</sub>I</td>
+              </tr>
+              <tr>
+                <td>V</td>
+                <td>=</td>
+                <td>V<sub>1</sub> + V<sub>2</sub></td>
+              </tr>
+              <tr>
+                <td>I</td>
+                <td>=</td>
+                <td>V / R<sub>0</sub></td>
+              </tr>
+            </table>
+          </div><!-- section -->
+          <div class="section">
+            <ol class="que container">
+              <li>
+                <div class="que question sentence">
+                  次の回路の計算をせよ．
+                </div>
+                <figure>
+                  <img src="sch/img/02.png" width="250px">
+                  <figcaption><span class="figNum"></span>que1sch</figcaption>
+                </figure>
+                <ol class="que">
+                  <li>
+                    <div class="que question">
+                      合成抵抗<span class="formula">R<sub>0</sub></span>求めよ．
+                    </div>
+                    <div class="que ans">
+                      <table class="formula align-left">
+                        <tr>
+                          <td>R<sub>0</sub></td>
+                          <td>=</td>
+                          <td>R<sub>1</sub> + R<sub>2</sub></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>=</td>
+                          <td>10 + 40</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>=</td>
+                          <td><u>50 &#937;</u></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="que question">
+                      回路に流れる電流<span class="formula">I</span>を求めよ．
+                    </div>
+                    <div class="que ans">
+                      <table class="formula align-left">
+                        <tr>
+                          <td>I</td>
+                          <td>=</td>
+                          <td>V / R<sub>0</sub></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>=</td>
+                          <td>100 / 50</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>=</td>
+                          <td><u>2 A</u></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="que question">
+                      10&#937;と40&#937;の電圧降下を求めよ．
+                    </div>
+                    <div class="que ans">
+                      <table class="formula align-left">
+                        <tr>
+                          <td>V<sub>1</sub></td>
+                          <td>=</td>
+                          <td>V<sub>0</sub> &times; R<sub>1</sub> / R<sub>0</sub></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>=</td>
+                          <td>100 &times; 10 / 50</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>=</td>
+                          <td><u>20 V</u></td>
+                        </tr>
+                      </table>
+                      <table class="formula align-left">
+                        <tr>
+                          <td>V<sub>2</sub></td>
+                          <td>=</td>
+                          <td>V<sub>0</sub> &times; R<sub>2</sub> / R<sub>0</sub></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>=</td>
+                          <td>100 &times; 40 / 50</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>=</td>
+                          <td><u>80 V</u></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <div class="que question sentence">
+                  次の回路の計算をせよ．
+                </div>
+                <figure>
+                  <img src="sch/img/03.png" width="250px">
+                  <figcaption><span class="figNum"></span>que2sch</figcaption>
+                </figure>
+                <ol>
+                  <li>
+                    <div class="que question">
+                      合成抵抗<span class="formula">R<sub>0</sub></span>求めよ．
+                    </div>
+                    <div class="que ans">
+                      <table class="formula align-left">
+                        <tr>
+                          <td>R<sub>0</sub></td>
+                          <td>=</td>
+                          <td>R<sub>1</sub> + R<sub>2</sub></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>=</td>
+                          <td>5 + 10</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>=</td>
+                          <td><u>15 &#937;</u></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="que question">
+                      回路に流れる電流<span class="formula">I</span>を求めよ．
+                    </div>
+                    <div class="que ans">
+                      <table class="formula align-left">
+                        <tr>
+                          <td>I</td>
+                          <td>=</td>
+                          <td>V / R<sub>0</sub></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>=</td>
+                          <td>30 / 15</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>=</td>
+                          <td><u>2 A</u></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="que question">
+                      5&#937;と10&#937;の電圧降下を求めよ．
+                    </div>
+                    <div class="que ans">
+                      <table class="formula align-left">
+                        <tr>
+                          <td>V<sub>1</sub></td>
+                          <td>=</td>
+                          <td>V<sub>0</sub> &times; R<sub>1</sub> / R<sub>0</sub></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>=</td>
+                          <td>30 &times; 5 / 15</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>=</td>
+                          <td><u>10 V</u></td>
+                        </tr>
+                      </table>
+                      <table class="formula align-left">
+                        <tr>
+                          <td>V<sub>2</sub></td>
+                          <td>=</td>
+                          <td>V<sub>0</sub> &times; R<sub>2</sub> / R<sub>0</sub></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>=</td>
+                          <td>30 &times; 10 / 15</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>=</td>
+                          <td><u>20 V</u></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+            直列接続の合成抵抗は，抵抗値の総和となる．
+          </div><!-- section -->
+        </div><!-- chapter -->
       </div><!-- part -->
     </div>  <!-- htmlWrap -->
     <!-- chapter-section-subsection-subsubsection-item-contents -->
@@ -358,6 +598,8 @@
 
         judge_fuckDevice ();
         set_date ( dom.date );
+        set_tblNum ();
+        set_figNum ();
 
         function judge_fuckDevice () {
 
@@ -502,6 +744,25 @@
             console.log ( element );
             element [ i ].style.display = "none";
           }
+        }
+      }
+
+      function set_tblNum () {
+
+        let tblNum = document.querySelectorAll ( "span.tblNum" );
+
+        for ( let i = 1; i < tblNum.length + 1; i++ ) {
+
+          tblNum [ i - 1 ].innerHTML = "table" + i + ". ";
+        }
+      }
+
+      function set_figNum () {
+
+        let figNum = document.querySelectorAll ( "span.figNum" );
+
+        for ( let i = 1; i < figNum.length + 1; i++ ) {
+          figNum [ i - 1 ].innerHTML = "fig" + i + ". ";
         }
       }
 

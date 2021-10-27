@@ -1,0 +1,63 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_US R1
+U 1 1 61764A26
+P 1400 1050
+F 0 "R1" V 1195 1050 50  0000 C CNN
+F 1 "5" V 1286 1050 50  0000 C CNN
+F 2 "" V 1440 1040 50  0001 C CNN
+F 3 "~" H 1400 1050 50  0001 C CNN
+	1    1400 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 617651A8
+P 1800 1050
+F 0 "R2" V 1595 1050 50  0000 C CNN
+F 1 "10" V 1686 1050 50  0000 C CNN
+F 2 "" V 1840 1040 50  0001 C CNN
+F 3 "~" H 1800 1050 50  0001 C CNN
+	1    1800 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 1050 1650 1050
+Wire Wire Line
+	1200 1050 1250 1050
+Wire Wire Line
+	1450 1250 1200 1250
+Wire Wire Line
+	1200 1250 1200 1050
+Wire Wire Line
+	1750 1250 2000 1250
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 61768595
+P 1650 1250
+F 0 "BT1" V 1905 1300 50  0001 C CNN
+F 1 "30V" V 1450 1300 50  0000 C CNN
+F 2 "" V 1650 1310 50  0001 C CNN
+F 3 "~" V 1650 1310 50  0001 C CNN
+	1    1650 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1950 1050 2000 1050
+Wire Wire Line
+	2000 1250 2000 1050
+$EndSCHEMATC
