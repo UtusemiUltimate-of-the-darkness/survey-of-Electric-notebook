@@ -78,6 +78,11 @@
         padding-left : 1.5em;
       }
 
+      figure img {
+
+        background-color : #FFFFFF;
+      }
+
       .align-left {
 
         text-align : left;
@@ -107,6 +112,15 @@
         border : solid 1px #E5B217;
         padding : 0.2em 0.5em;
         text-align : center;
+      }
+
+      table.img.tiring  tr td {
+
+        padding-left : 2em;
+      }
+      table.img.tiring  tr td:nth-child(1) {
+
+        padding-left : 0em;
       }
 
     </style>
@@ -406,7 +420,7 @@
                         <tr>
                           <td></td>
                           <td>=</td>
-                          <td><u>50 &#937;</u></td>
+                          <td><u>50 <span class="unit Omega">&#937;</span></u></td>
                         </tr>
                       </table>
                     </div>
@@ -430,14 +444,14 @@
                         <tr>
                           <td></td>
                           <td>=</td>
-                          <td><u>2 A</u></td>
+                          <td><u>2 <span class="unit ampere">A</span></u></td>
                         </tr>
                       </table>
                     </div>
                   </li>
                   <li>
                     <div class="que question">
-                      10&#937;と40&#937;の電圧降下を求めよ．
+                      <span class="formula">10&#937;</span>と<span class="formula">40&#937;</span>の電圧降下を求めよ．
                     </div>
                     <div class="que ans">
                       <table class="formula align-left">
@@ -454,7 +468,7 @@
                         <tr>
                           <td></td>
                           <td>=</td>
-                          <td><u>20 V</u></td>
+                          <td><u>20 <span class="unit volt">V</span></u></td>
                         </tr>
                       </table>
                       <table class="formula align-left">
@@ -471,7 +485,7 @@
                         <tr>
                           <td></td>
                           <td>=</td>
-                          <td><u>80 V</u></td>
+                          <td><u>80 <span class="unit volt">V</span></u></td>
                         </tr>
                       </table>
                     </div>
@@ -506,7 +520,7 @@
                         <tr>
                           <td></td>
                           <td>=</td>
-                          <td><u>15 &#937;</u></td>
+                          <td><u>15 <span class="unit Omega">&#937;</span></u></td>
                         </tr>
                       </table>
                     </div>
@@ -530,14 +544,14 @@
                         <tr>
                           <td></td>
                           <td>=</td>
-                          <td><u>2 A</u></td>
+                          <td><u>2 <span class="unit ampere">A</span></u></td>
                         </tr>
                       </table>
                     </div>
                   </li>
                   <li>
                     <div class="que question">
-                      5&#937;と10&#937;の電圧降下を求めよ．
+                      <span class="formula">5&#937;</span>と<span class="formula">10&#937;</span>の電圧降下を求めよ．
                     </div>
                     <div class="que ans">
                       <table class="formula align-left">
@@ -554,7 +568,7 @@
                         <tr>
                           <td></td>
                           <td>=</td>
-                          <td><u>10 V</u></td>
+                          <td><u>10 <span class="unit volt">V</span></u></td>
                         </tr>
                       </table>
                       <table class="formula align-left">
@@ -571,7 +585,7 @@
                         <tr>
                           <td></td>
                           <td>=</td>
-                          <td><u>20 V</u></td>
+                          <td><u>20 <span class="unit volt">V</span></u></td>
                         </tr>
                       </table>
                     </div>
@@ -580,6 +594,736 @@
               </li>
             </ol>
             直列接続の合成抵抗は，抵抗値の総和となる．
+          </div><!-- section -->
+          <div class="section">
+            <h4 class="title section">抵抗の並列接続2</h4>
+            <ol class="que section">
+              <li>
+                以下の回路の合成抵抗<span class="formula">R<sub>0</sub></span>と各抵抗に流れる電流<span class="formula">I<sub>1</sub>, I<sub>2</sub>, I<sub>3</sub></span>と全電流<span class="formula">I</span>の値をそれぞれ求めよ
+                <figure>
+                  <img src="sch/img/05.png" width="300px">
+                  <figcaption><span class="figNum"></span>3個の抵抗が並列に接続された回路</figcaption>
+                </figure>
+                <table class="formula align-left">
+                  <tr>
+                    <td>I<sub>1</sub></td>
+                    <td>=</td>
+                    <td>V / R<sub>1</sub>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td>24 / 6</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td><u>4 <span class="unit ampere">A</span></u></td>
+                  </tr>
+                  <tr>
+                    <td>I<sub>2</sub></td>
+                    <td>=</td>
+                    <td>V / R<sub>2</sub></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td>24 / 6</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td><u>6 <span class="unit ampere">A</span></u></td>
+                  </tr>
+                  <tr>
+                    <td>I<sub>3</sub></td>
+                    <td>=</td>
+                    <td>V / R<sub>3</sub></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td>24 / 12</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td><u>2 <span class="unit ampere">A</span></u></td>
+                  </tr>
+                  <tr>
+                    <td>I</td>
+                    <td>=</td>
+                    <td>I<sub>1</sub> + I<sub>2</sub> + I<sub>3</sub></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td>4 + 6 + 2</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td><u>12 <span class="unit ampere">A</span></u></td>
+                  </tr>
+                  <tr>
+                    <td>R<sub>0</sub></td>
+                    <td>=</td>
+                    <td>V / I</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td>24 / 12</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td><u>2 <span class="unit Omega">&#937;</span></u></td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                以下の回路の合成抵抗<span class="formula">R<sub>0</sub></span>と各抵抗に流れる電流と全電流<span class="formula">I</span>を求めよ
+                <figure>
+                  <img src="sch/img/06.png" width="450px">
+                  <figcaption><span class="figNum"></span>que2sch</figcaption>
+                </figure>
+                同じ抵抗がn個並列に接続された場合の合成抵抗<span class="formula">R<sub>0</sub></span>は<span class="formula">R<sub>0</sub> = R / n</span>となる．
+                <table class="formula align-left">
+                  <tr>
+                    <td>R<sub>0</sub></td>
+                    <td>=</td>
+                    <td>25 / 5</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td><u>5 <span class="unit Omega">&#937;</span></u></td>
+                  </tr>
+                </table>
+                各抵抗に流れる電流は
+                <table class="formula align-left">
+                  <tr>
+                    <td>50 / 25</td>
+                    <td>=</td>
+                    <td><u>2 <span class="unit ampere">A</span></u></td>
+                  </tr>
+                </table>
+                全電流は
+                <table class="formula align-left">
+                  <tr>
+                    <td>I</td>
+                    <td>=</td>
+                    <td>V / R<sub>0</sub></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td>50 / 5</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td><u>10 <span class="unit ampere">A</span></u></td>
+                  </tr>
+                </table>
+              </li>
+            </ol>
+          </div><!-- section -->
+          <div class="section">
+            <h4 class="section title">直並列回路</h4>
+            <p>次の回路の合成抵抗を求めよ</p>
+            <table class="img tiring">
+              <tr>
+                <td>
+                  <img src="sch/img/07.png" width="300px">
+                </td>
+                <td>
+                  <img src="sch/img/08.png" width="300px">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="figNum"></span>直並列回路1
+                </td>
+                <td>
+                  <span class="figNum"></span>直並列回路1-2
+                </td>
+              </tr>
+            </table>
+            <table class="formula align-left">
+              <tr>
+                <td>R<sub>0</sub></td>
+                <td>=</td>
+                <td>3 + 3 + 1</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>=</td>
+                <td><u>7 <span class="unit Omega">&#937;</span></u></td>
+              </tr>
+            </table>
+            <p>次の合成抵抗を求めよ</p>
+            <table class="img tiring">
+              <tr>
+                <td>
+                  <img src="sch/img/09.png" width="250px">
+                </td>
+                <td>
+                  <img src="sch/img/10.png" width="250px">
+                </td>
+                <td>
+                  <img src="sch/img/11.png" width="250px">
+                </td>
+                <td>
+                  <img src="sch/img/12.png" width="250px">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="figNum"></span>直並列回路2
+                </td>
+                <td>
+                  <span class="figNum"></span>直並列回路2-2
+                </td>
+                <td>
+                  <span class="figNum"></span>直並列回路2-3
+                </td>
+                <td>
+                  <span class="figNum"></span>直並列回路2-4
+                </td>
+              </tr>
+            </table>
+            <table class="formula align-left">
+              <tr>
+                <td>R<sub>0</sub></td>
+                <td>=</td>
+                <td>5 + 5</td>
+              </tr>
+              <tr>
+                <td></sub></td>
+                <td>=</td>
+                <td><u>10 <span class="unit Omega">&#937;</span></u></td>
+              </tr>
+            </table>
+          </div><!-- section -->
+          <div class="section">
+            <h4 class="section title">抵抗の直並列接続</h4>
+            <p>次の回路の合成抵抗を求めよ．</p>
+            <table class="img tiring">
+              <tr>
+                <td>
+                  <img src="sch/img/13-1.png" width="250px">
+                </td>
+                <td>
+                  <img src="sch/img/13-2.png" width="250px">
+                </td>
+                <td>
+                  <img src="sch/img/13-3.png" width="250px">
+                </td>
+                <td>
+                  <img src="sch/img/13-4.png" width="250px">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="figNum"></span>直並列回路1-1
+                </td>
+                <td>
+                  <span class="figNum"></span>直並列回路1-2
+                </td>
+                <td>
+                  <span class="figNum"></span>直並列回路1-3
+                </td>
+                <td>
+                  <span class="figNum"></span>直並列回路1-4
+                </td>
+              </tr>
+            </table>
+            <table class="formula align-left">
+              <tr>
+                <td>R<sub>0</sub></td>
+                <td>=</td>
+                <td>6 + ( 1 / 4 + 1 / 12 )<sup>-1</sup></td>
+              </tr>
+              <tr>
+                <td></sub></td>
+                <td>=</td>
+                <td><u>9 <span class="unit Omega">&#937;</span></u></td>
+              </tr>
+            </table>
+            <ol class="que section">
+              <li>
+                次の回路の合成抵抗を求めよ．
+                <table class="img tiring">
+                  <tr>
+                    <td>
+                      <img src="sch/img/14-1.png" width="250px">
+                    </td>
+                    <td>
+                      <img src="sch/img/14-2.png" width="250px">
+                    </td>
+                    <td>
+                      <img src="sch/img/14-3.png" width="250px">
+                    </td>
+                    <td>
+                      <img src="sch/img/14-4.png" width="250px">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="figNum"></span>que1sch1-1
+                    </td>
+                    <td>
+                      <span class="figNum"></span>que1sch1-2
+                    </td>
+                    <td>
+                      <span class="figNum"></span>que1sch1-3
+                    </td>
+                    <td>
+                      <span class="figNum"></span>que1sch1-4
+                    </td>
+                  </tr>
+                </table>
+                <table class="formula align-left">
+                  <tr>
+                    <td>R<sub>0</sub></td>
+                    <td>=</td>
+                    <td>6 + ( 1 / 20 + 1 / 5 )<sup>-1</sup></td>
+                  </tr>
+                  <tr>
+                    <td></sub></td>
+                    <td>=</td>
+                    <td><u>10 <span class="unit Omega">&#937;</span></u></td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                次の回路の合成抵抗を求めよ
+                <table class="img tiring">
+                  <tr>
+                    <td>
+                      <img src="sch/img/15-1.png" width="250px">
+                    </td>
+                    <td>
+                      <img src="sch/img/15-2.png" width="250px">
+                    </td>
+                    <td>
+                      <img src="sch/img/15-3.png" width="250px">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="figNum"></span>que2sch1-1
+                    </td>
+                    <td>
+                      <span class="figNum"></span>que2sch1-2
+                    </td>
+                    <td>
+                      <span class="figNum"></span>que2sch1-3
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="sch/img/15-4.png" width="250px">
+                    </td>
+                    <td>
+                      <img src="sch/img/15-5.png" width="250px">
+                    </td>
+                    <td>
+                      <img src="sch/img/15-6.png" width="250px">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="figNum"></span>que2sch1-4
+                    </td>
+                    <td>
+                      <span class="figNum"></span>que2sch1-5
+                    </td>
+                    <td>
+                      <span class="figNum"></span>que2sch1-6
+                    </td>
+                  </tr>
+                </table>
+                <table class="formula align-left">
+                  <tr>
+                    <td>R<sub>0</sub></td>
+                    <td>=</td>
+                    <td>5 + 15</td>
+                  </tr>
+                  <tr>
+                    <td></sub></td>
+                    <td>=</td>
+                    <td><u>20 <span class="unit Omega">&#937;</span></u></td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                次の回路を流れる電流<span class="formula">I<sub>1</sub></span>と<span class="formula">I<sub>2</sub></span>の値，及び<span class="formula">R<sub>3</sub></span>の値を求めよ．
+                <figure>
+                  <img src="sch/img/16-1.png" width="300px">
+                  <figcaption>
+                    <span class="figNum"></span>que3sch
+                  </figcaption>
+                </figure>
+                <table class="formula align-left">
+                  <tr>
+                    <td>R<sub>0</sub></td>
+                    <td>=</td>
+                    <td>E / I</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td>100 / 5</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td><u>20 <span class="unit Omega">&#937;</span></u></td>
+                  </tr>
+                  <tr>
+                    <td>R<sub>12</sub></td>
+                    <td>=</td>
+                    <td>( 1 / 30 + 1 / 20 )<sup>-1</sup></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td><u>12 <span class="unit Omega">&#937;</span></u></td>
+                  </tr>
+                  <tr>
+                    <td>R<sub>3</sub></td>
+                    <td>=</td>
+                    <td>20 - 12</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td><u>8 <span class="unit Omega">&#937;</span></u></td>
+                  </tr>
+                  <tr>
+                    <td>V<sub>3</sub></td>
+                    <td>=</td>
+                    <td>IR<sub>3</sub></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td>5 &times; 8</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td><u>40 <span class="unit volt">V</span></u></td>
+                  </tr>
+                  <tr>
+                    <td>I<sub>1</sub></td>
+                    <td>=</td>
+                    <td>60 / 30</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td><u>2 <span class="unit ampere">A</span></u></td>
+                  </tr>
+                  <tr>
+                    <td>I<sub>2</sub></td>
+                    <td>=</td>
+                    <td>60 / 20</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=</td>
+                    <td><u>3 <span class="unit ampere">A</span></u></td>
+                  </tr>
+                </table>
+              </li>
+            </ol>
+          </div><!-- section -->
+        </div><!-- chapter -->
+        <div class="chapter">
+          <h3 class="title chapter">第2章 電流の発熱作用</h3>
+          <div class="section">
+            電気が単位時間に行う仕事の量を電力といい，量記号は<span class="formula power">P</span>，単位は<span class="formula unit watt">W</span>を用いて表す．電力<span class="formula power">P</span>は回路に加えた電圧<span class="formula volt">V</span>と流れる電流<span class="formula current">I</span>の積で求められる．<br>
+            電力の単位は<span class="formula watt">W</span>だが大きい値の場合には<span class="formula unit kilo-watt">kW</span>や<span class="formula unit mega-watt">MW</span>が用いられる．逆に小さい電力の場合は<span class="formula unit mill-watt">mW</span>や<span class="formula unit uwatt">µW</span>を用いる．<br>
+            <span class="formula">P = VI</span><br>
+            回路の抵抗を<span class="formula resister">R</span><span class="formula unit omega">[&#937;]</span>とすると，<span class="formula">V = RI</span>より
+            <p class="formula">
+              P = RI<sup>2</sup> = V<sup>2</sup> / R [ W ]
+            </p>
+          </div><!-- section -->
+          <div class="section">
+            <ol>
+              <li>
+                <div class="que question">
+                  電熱器に<span class="formula">100<span class="formula unit volt">V</span>の電圧が加わり，<span class="formula">5</span><span class="formula unit ampere">A</span>の電流が流れている場合，電熱器に消費される電力<span class="formula power">P</span>はいくらか
+                </div>
+                <div class="que ans">
+                  <table class="formula align-left">
+                    <tr>
+                      <td>P</td>
+                      <td>=</td>
+                      <td>VI</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td><u>500 W</u></td>
+                    </tr>
+                  </table>
+                </div>
+              </li>
+              <li>
+                <div class="que question">
+                  <span class="formula">20</span><span class="formula unit omega">&#937;</span>の抵抗に<span class="formula">5</span><span class="formula unit ampere">A</span>の電流が流れている時，抵抗によって消費される電力を求めよ．
+                </div>
+                <div class="que ans">
+                  <table class="formula align-left">
+                    <tr>
+                      <td>P</td>
+                      <td>=</td>
+                      <td>VI</td>
+                      <td>=</td>
+                      <td>RI<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td colspan="3">20 &#0215; 5<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td colspan="3"><u>500 W</u></td>
+                    </tr>
+                  </table>
+                </div>
+              </li>
+              <li>
+                <div class="que question">
+                  <span class="formula">25</span><span class="formula unit omega">&#937;</span>の抵抗に<span class="formula">100</span><span class="formula unit volt">V</span>の電圧を加えた時，抵抗で消費される電力<span class="formula power">P</span>を求めよ
+                </div>
+                <div class="que ans">
+                  <table class="formula align-left">
+                    <tr>
+                      <td>P</td>
+                      <td>=</td>
+                      <td>VI</td>
+                      <td>=</td>
+                      <td>V<sup>2</sup> / R</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td colspan="3">100<sup>2</sup> / 25</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td colspan="3"><u>400 W</u></td>
+                    </tr>
+                  </table>
+                </div>
+              </li>
+              <li>
+                <div class="que question">
+                  電熱器に<span class="formula">100</span><span class="formula unit volt">V</span>の電圧を印加し，<span class="formula">20</span><span class="formula unit ampere">A</span>の電流を流すと，電熱器によって消費される電力はいくらか.
+                  また電熱器の抵抗はいくらか．
+                </div>
+                <div class="que ans">
+                  <table class="formula align-left">
+                    <tr>
+                      <td>P</td>
+                      <td>=</td>
+                      <td>VI</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td>100 &#0215; 20</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td><u>2 kW</u></td>
+                    </tr>
+                    <tr>
+                      <td>R</td>
+                      <td>=</td>
+                      <td>V / I</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td>100 / 20</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>=</td>
+                      <td><u>5 &#937;</u></td>
+                    </tr>
+                  </table>
+                </div>
+              </li>
+            </ol>
+            <div class="subsection">
+              <h4 class="title subsection">電力量</h4>
+              <div class="subsubsection">
+                電気がある時間内に行った電気的な仕事の総量，つまり電気エネルギーの総量を電力量という．電力量の記号は<span class="formula watt">W</span>，単位は<span class="formula unit watt-sec">Ws</span>を用いる．<br>
+                <span class="formula">W = Pt <span class="formula unit watt-sec">[ Ws ]</span></span>
+              </div><!-- subsubsection -->
+              <div class="subsubsection">
+                <ol>
+                  <li>
+                    <div class="que question">
+                      <span class="formula">40</span><span class="formula unit watt">W</span>の電球を10秒間点灯すると電力量はいくらか
+                    </div>
+                    <div class="que ans">
+                      <table class="formula align-left">
+                        <tr>
+                          <td>W</td>
+                          <td>=</td>
+                          <td>40 &#0215; 10</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>=</td>
+                          <td><u>400 Ws</u></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="que question">
+                      <span class="formula">500</span><span class="formula unit watt">W</span>の電熱器を10時間使用した時の電力量を求めよ
+                    </div>
+                    <div class="que ans">
+                      <table class="formula align-left">
+                        <tr>
+                          <td>W</td>
+                          <td>=</td>
+                          <td>500 &#0215; 10</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>=</td>
+                          <td><u>5 kWh</u></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </li>
+                </ol>
+              </div><!-- subsubsection -->
+            </div><!-- subsection -->
+          </div><!-- section -->
+          <div class="section">
+            <h4 class="title section">ジュール熱</h4>
+            <div class="subsection">
+              <span class="formula current">I</span><span class="formula unit ampere">[A]</span>の電流が<span class="formula resister">R</span><span class="formula unit omega">[Ω]の中を<span class="formula time">t</span><span class="formula unit sec">[s]</span>流れると，<span class="formula rpt">RPt</span><span class="formula unit watt-sec">[Ws]</span>の電気エネルギーすなわち電力量が消費され，その抵抗に<span class="formula">RI<sup>2</sup>t</span><span class="formula unit joule">[J]</span>の熱が発生する．この作用を<u>電流の発熱作用</u>といい，発生する熱を<u>ジュール熱</u>という．<br>
+              電気エネルギーや熱エネルギーなどエネルギーの量または仕事量を表す単位にジュール<span class="formula unit joule">[J]</span>を用いる．1<span class="formula unit joule">[J]</span>は1<span class="formula unit ampere">[A]</span>の電流が1<span class="formula unit omega">[&#937;]</span>の抵抗中を1<span class="formula unit sec">[s]</span>間流れた時に行う仕事量に相当する．したがって，1<span class="formula unit watt">[W]</span>とは，1<span class="formula unit js">[J/s]</span>の仕事を行う電気の能力である．<br>
+              <span class="formula">1 [ W ] = 1 [ J / s ] = 1 [ Ws ]</span>
+            </div>
+            <h4 class="title section">熱量</h4>
+            <div class="subsection">
+              熱エネルギーは一般に熱量と呼ばれ，単位に<span class="formula unit cal">[cal]</span>を用いる．<span class="formula">1</span><span class="formula unit joule">[J]</span>の仕事量は約<span class="formula">0.24</span><span class="formula unit cal">[cal]</span>の熱量に相当する．
+              <span class="formula">1</span><span class="formula unit cal">[cal]</span>の熱量とは<span class="formula">1</span><span class="formula unit gram">[g]</span>の水を<span class="formula">1</span><span class="formula unit celsius-deg">[&#8451;]</span>上昇させるのに必要な熱量である．
+              <span class="formula resister">R</span><span class="formula unit omega">[&#937;]</span>の抵抗に<span class="formula current">I</span><span class="formula unit current">[A]</span>の電流を<span class="formula time">t</span><span class="formula unit sec">[s]</span>流した時発生する熱量<span class="formula h">H</span><span class="formula unit cal">[cal]</span>は次のようになる．
+              <table class="formula align-left">
+                <tr>
+                  <td>H</td>
+                  <td>=</td>
+                  <td>0.24 W</td>
+                  <td>=</td>
+                  <td>0.24 Pt</td>
+                  <td>=</td>
+                  <td>0.24 RI<sup>2</sup>t</td>
+                  <td>[cal]</td>
+                </tr>
+              </table>
+            </div><!-- subsection -->
+            <h4 class="title section">電熱機器の効率</h4>
+            <div class="subsection">
+              一般に電熱機器は発生した熱量が全て目的の仕事に使われるとは限らない．電気ポットの場合，発生した熱量の一部がポット自信を温めたり空気中に発散したりしている．したがって発生した熱量の一部は無駄な熱量になる．
+              有効な熱量と発生した総熱量の比を器具の効率といい，<span class="formula eta">&#951;</span>で表す．
+              <table class="formula align-left">
+                <tr>
+                  <td>&#951;</td>
+                  <td>=</td>
+                  <td>(発生総熱量-無効熱量) / 発生総熱量 &#0215; 100</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>=</td>
+                  <td>有効熱量/発生総熱量 &#0215; 100 [&#37;]</td>
+                </tr>
+              </table>
+              <ol>
+                <li>
+                  <div class="que question">
+                    <span class="formula">500</span><span class="formula unit watt">W</span>の電熱器を30分間使用した時，何<span class="formula unit kcal">[kcal]</span>の熱量を有効に使用できるか．電熱器の効率を50&#37;とする．
+                  </div>
+                  <div class="que ans">
+                    <table class="formula align-left">
+                      <tr>
+                        <td>H</td>
+                        <td>=</td>
+                        <td>0.24 &#0215; 500 &#0215; ( 30 &#0215; 60 ) &#0215; 0.5</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>=</td>
+                        <td>108000</td>
+                      </tr>
+                      <tr>
+                        <td>&there4;</td>
+                        <td colspan="2">108 [kcal]</td>
+                      </tr>
+                    </table>
+                  </div>
+                </li>
+                <li>
+                  <div class="que question">
+                    <span class="formula">20</span><span class="formula unit celsius-deg">[&#8451;]</span>の水<span class="formula">0.5</span><span class="formula unit litre">L</span>を<span class="formula">300</span><span class="formula unit watt">W</span>の電気ポットを使用して10分間加熱した．水の温度は何度か．電気ポットの効率を80&#37;とする．
+                  </div>
+                  <div class="que ans">
+                    <table class="formula align-left">
+                      <tr>
+                        <td>0.24 &#0215; 300 &#0215; 600 &#0215; 0.8 </td>
+                        <td>=</td>
+                        <td>34560 [cal]</td>
+                      </tr>
+                      <tr>
+                        <td>0.5 [L]</td>
+                        <td>=</td>
+                        <td>500 [g]</td>
+                      </tr>
+                      <tr>
+                        <td>34560 / 500</td>
+                        <td>=</td>
+                        <td>69.12</td>
+                      </tr>
+                      <tr>
+                        <td>20 + 69.12</td>
+                        <td>=</td>
+                        <td>89.12 [&#8451;]</td>
+                      </tr>
+                    </table>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div><!-- section -->
+        </div><!-- chapter -->
+        <div class="chapter">
+          <h3 class="title chapter">第3章 抵抗の性質</h3>
+          <div class="section">
+            物体の抵抗値は物体自身の固有な性質（材質）や物体の形状，さらに温度によって決まる．<br>
+            同じ材料，同じ大きさ（断面積）の導体では，長さが長くなるほど抵抗は増加する．また，同じ材料，同じ長さの導体では断面積が広いほど抵抗値は減少する．したがって，導体の抵抗を<span class="formula resister">R</span>，長さを<span class="formula length">l</span>，断面積を<span class="formula arer">A</span>とし，抵抗率を<span class="formula rho">&#961;</span>とすると，<br>
+            <span class="formula">R = &#961;l / A [ &#937; ]<br>
+              となる．<br>
+              長さは<span class="formula m">[ m ]</span>，断面積は<span class="formula m2">[ m<sup>2</sup> ]となる．抵抗率<span class="forula rho">&#961;</span>は断面積<span class="formula">1 [ m<sup>2</sup> ]で長さ<span class="formula">1 [ m ]の長さに等しい．
           </div><!-- section -->
         </div><!-- chapter -->
       </div><!-- part -->
