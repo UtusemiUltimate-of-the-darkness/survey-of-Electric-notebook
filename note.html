@@ -100,6 +100,10 @@
 
         font-style: italic;
       }
+      .border-bottom {
+
+        border-bottom : solid 1px #E5B217;
+      }
 
       div.part div.chapter div.section table.auxUnit {
 
@@ -136,7 +140,7 @@
         </div>
       </div>
       <div class="part">
-        <h2>第2部 直流回路</h2>
+        <h2 class="title part">第2部 直流回路</h2>
         <div class="chapter">
           <h3>第1章 オームの法則</h3>
           <p>
@@ -1325,6 +1329,487 @@
               となる．<br>
               長さは<span class="formula m">[ m ]</span>，断面積は<span class="formula m2">[ m<sup>2</sup> ]となる．抵抗率<span class="forula rho">&#961;</span>は断面積<span class="formula">1 [ m<sup>2</sup> ]で長さ<span class="formula">1 [ m ]の長さに等しい．
           </div><!-- section -->
+          <div class="section">
+            <h4 class="title section">抵抗率の計算</h4>
+            <div class="subsection">
+              <table class="formula">
+                <tr>
+                  <td>R</td>
+                  <td>=</td>
+                  <td>&#961;</td>
+                  <td>
+                    <table class="formula">
+                      <tr>
+                        <td class="border-bottom">l</td>
+                      </tr>
+                      <tr>
+                        <td class="align-center">A</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <ol class="question">
+                <li>
+                  <div class="que">
+                    軟銅の抵抗率<span class="formula">&#961;=1.7241 &#0215; 10<sup>-8</sup> [ &#937;&sdot;m ]</span>で断面積<span class="formula">0.75mm<sup>2</sup></span>で長さ100mのとき抵抗の大きさを求めよ
+                  </div>
+                  <div class="ans">
+                    <table class="formula">
+                      <tr>
+                        <td>R</td>
+                        <td>=</td>
+                        <td>
+                          <table class="formula">
+                            <tr>
+                              <td rowspan="2">&#961;</td>
+                              <td class="border-bottom">l</td>
+                            </tr>
+                            <tr>
+                              <td class="align-center">A</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>=</td>
+                        <td>1.7241 &#0215; 10<sup>-8</sup></td>
+                        <td>
+                          <table class="formula">
+                            <tr>
+                              <td class="border-bottom align-center">100</td>
+                            </tr>
+                            <tr>
+                              <td class="align-center">0.75 &#0215; 10<sup>-6</sup></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>&asymp;</td>
+                        <td>2.3 [ &#937; ]</td>
+                      </tr>
+                    </table>
+                  </div>
+                </li>
+                <li>
+                  <div class="que que2">
+                    100V用の500Wの電熱器のニクロム線がある．ニクロム線の抵抗率<span class="formula">&#961;=100 &#0215; 10<sup>-8</sup>[ &#937;&sdot;m ]</span>，ニクロム線の断面積<span class="formula">A=0.2 &#0215; 10<sup>-6</sup>[ m<sup>2</sup> ]
+                  </div>
+                  <div class="que que2-1">
+                    <ol>
+                      <li>
+                        <div class="que">
+                          電熱器の抵抗を求めよ
+                        </div>
+                        <div class="ans">
+                          <table class="formula">
+                            <tr>
+                              <td>P</td>
+                              <td>=</td>
+                              <td>V<sup>2</sup> / R</td>
+                            </tr>
+                            <tr>
+                              <td>R</td>
+                              <td>=</td>
+                              <td>V<sup>2</sup> / P</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td>=</td>
+                              <td>100<sup>2</sup> / 500</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td>=</td>
+                              <td>20 [ &#937; ]</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="que">
+                          長さ<span class="formula">l</span>を求めよ
+                        </div>
+                        <div class="ans">
+                          <table class="formula">
+                            <tr>
+                              <td>R</td>
+                              <td>=</td>
+                              <td>
+                                <table class="formula">
+                                  <tr>
+                                    <td rowspan="2">&#961;</td>
+                                    <td class="border-bottom">l</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="align-center">A</td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>&#961;l</td>
+                              <td>=</td>
+                              <td colspan="2">AR</td>
+                            </tr>
+                            <tr>
+                              <td>l</td>
+                              <td>=</td>
+                              <td>
+                                <table class="formula">
+                                  <tr>
+                                    <td class="border-bottom">AR</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="align-center">&#961;</td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td>=</td>
+                              <td colspan="2">
+                                <table class="formula">
+                                  <tr>
+                                    <td class="border-bottom">( 0.2 &#0215; 10<sup>-6</sup> ) &#0215; 20</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="align-center">100 &#0215; 10<sup>-8</sup></td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td>=</td>
+                              <td>
+                                <table class="formula">
+                                  <tr>
+                                    <td class="border-bottom align-center">4 &#0215; 10<sup>-6</sup></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="align-center">100 &#0215; 10<sup>-8</sup></td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td>=</td>
+                              <td>4 [ m ]</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </li>
+                    </ol>
+                  </div>
+                </li>
+                <li>
+                  <div class="que">
+                    断面が円形の銅線の抵抗値は，銅線の長さを9倍にした時，直径を何倍にすれば抵抗値は変化しないか．
+                  </div>
+                  <div class="ans">
+                    断面積<span class="formula">A</span>が大きいほど電流が流れやすくなるので<span class="formula">R</span>は小さくなり，また，長さ<span class="formula">l</span>が長いほどその分抵抗は増えるのでRは大きくなる．長さ<span class="formula">l</span>を9倍にした時，抵抗<span class="formula">R</span>が変わらないようにするためにには断面積<span class="formula">A</span>を9倍にする必要がある．従って導体の直径は3倍にすれば良い．
+                  </div>
+                </li>
+                <li>
+                  <div class="que">
+                    A，B2本の同材質の銅線がある．Aは直径1.6mm，長さ200m，Bは直径3.2mm，長さ100mである．Aの抵抗はBの何倍になるか
+                  </div>
+                  <div class="ans">
+                    <table class="formula">
+                      <tr>
+                        <td>R<sub>A</sub></td>
+                        <td>=</td>
+                        <td>200 / 0.8<sup>2</sup>&pi;</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>=</td>
+                        <td>200 / 0.64</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>=</td>
+                        <td>312.5</td>
+                      </tr>
+                      <tr>
+                        <td>R<sub>B</sub></td>
+                        <td>=</td>
+                        <td>100 / 1.6<sup>2</sup></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>=</td>
+                        <td>100 / 2.56</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>=</td>
+                        <td>39.0625</td>
+                      </tr>
+                    </table>
+                    <table class="formula">
+                      <tr>
+                        <td>312.5 / 39.0625</td>
+                        <td>=</td>
+                        <td>8 倍</td>
+                      </tr>
+                    </table>
+                  </div>
+                </li>
+              </ol>
+            </div>
+
+          </div><!-- section -->
+          <div class="section">
+            <h4 class="title section">抵抗の温度変化</h4>
+            <div class="subsection">
+              一般に導体の抵抗と温度との関係は，ほぼ直線的に変化する．温度<span class="formula">t &#8451;</span>の時の抵抗値を<span class="formula">Rt &#937;</span>とし，温度が変化して<span class="formula">T &#8451;</span>になった時の抵抗値を<span class="formula">RT &#937;</span>とすると，1&#8451;あたりの温度変化に対する抵抗の変化は
+              <table class="formula">
+                <tr>
+                  <td class="border-bottom">R<sub>T</sub> - R<sub>t</sub></td>
+                </tr>
+                <tr>
+                  <td>T - t</td>
+                </tr>
+              </table>
+              となる．<br>
+              1&#8451;の温度変化に対する抵抗の変化の割合を抵抗の温度計数と定義し，記号<span class="formula">&alpha;t</span>で表す．
+              <table class="formula">
+                <tr>
+                  <td></td>
+                  <td>=</td>
+                  <td>
+                    <table class="formula">
+                      <tr>
+                        <td class="border-bottom">
+                          <table class="formula">
+                            <tr>
+                              <td class="border-bottom align-center">R<sub>T</sub> - R<sub>t</sub></td>
+                            </tr>
+                            <tr>
+                              <td class="align-center">T - t</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="align-center">R<sub>t</sub></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              この温度計数<span class="formula">&alpha;t</span>を用いれば，温度T&#8451;における導体の抵抗RTは，t&#8451;の抵抗をRt&#937;とすると，次式で計算できる．
+              <table class="formula">
+                <tr>
+                  <td>R<sub>T</sub></td>
+                  <td>=</td>
+                  <td>抵抗の変化分</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>=</td>
+                  <td>R<sub>t</sub> + &alpha;<sub>t</sub> &#0215; R<sub>t</sub>( T - t )</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>=</td>
+                  <td>R<sub>t</sub>( 1 + &alpha;<sub>t</sub> ( T - t ) ) [ &#937; ]</td>
+                </tr>
+              </table>
+              となる．
+            </div>
+            <div class="subsection">
+              <ol>
+                <li>
+                  <div class="que">
+                    ある長さの軟銅線の抵抗が20&#8451;で15&#937;ありました．この軟銅線の60&#8451;の時の抵抗を求めよ．ただし，20&#8451;の軟銅の抵抗の温度計数は<span class="formula">&alpha;<sub>20</sub> = 0.004</span>とする．
+                  </div>
+                  <div class="ans">
+                    <table class="formula">
+                      <tr>
+                        <td>R<sub>60</sub></td>
+                        <td>=</td>
+                        <td>15 ( 1 + 0.004 ( T - 20 ) )</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>=</td>
+                        <td>17.4 [ &#937; ]</td>
+                      </tr>
+                    </table>
+                  </div>
+                </li>
+                <li>
+                  <div class="que">
+                    モータの巻線（銅線）の抵抗が20&#8451;のとき0.64&#937;ありました．次に，モータを運転した後，同じ巻線の抵抗を測定すると0.72&#937;になりました．銅の20&#8451;の抵抗温度計数は<span class="formula">&alpha;<sub>20</sub> = 0.004</span>とすると，モータの温度を求めなさい．
+                  </div>
+                  <div class="ans">
+                    <table class="formula">
+                      <tr>
+                        <td>0.72</td>
+                        <td>=</td>
+                        <td>0.64 ( 1 + 0.004 ( T - 20 ) )</td>
+                      </tr>
+                      <tr>
+                        <td>T</td>
+                        <td>=</td>
+                        <td>51.25 [ &#8451; ]</td>
+                      </tr>
+                    </table>
+                  </div>
+                </li>
+              </ol>
+            </div>
+            <div class="subsection">
+              電気計器の導体は，温度によって抵抗値が変化すると計器の指示値に誤差が生じる．したがって，電気計器に使用する抵抗体は，温度計数の小さい材料と銅線を組み合わせて全体の温度計数が小さくなるようにする．以下のような材料が用いられる．
+              <ul>
+                <li>
+                  マンガン（銅，マンガン，ニッケルの合金）<br>
+                  <span class="formula">&alpha;<sub>20</sub> = 0.00001</span>
+                </li>
+                <li>
+                  コンスタンタン（銅，ニッケルの合金）<br>
+                  <span class="formula">&alpha;<sub>20</sub> = 0.00004 〜 0.00001</span>
+                </li>
+              </ul>
+              温度計数が負の場合は半導体の特性である．サーミスタと呼ばれる素子は，温度計数が負であり，温度が上がると抵抗値が下がる．温度センサなどに利用される．
+            </div>
+          </div><!-- section -->
+        </div><!-- chapter -->
+      </div><!-- part -->
+      <div class="part">
+        <h2 class="title part">第3部 交流回路</h2>
+        <div class="chapter">
+          <h3 class="title chapter">交流の基本性質</h3>
+          <div class="section">
+            <h4>直流と交流</h4>
+            <div class="subsection">
+              <ul>
+                <li>
+                  直流<br>
+                  電池の電流や電圧のように，時間に対して一定の方向にかかる電圧や，一定の方向に流れる電流を直流という．また，方向は変わらないが時間と共に大きさが変化する電圧や電流を脈流という．
+                </li>
+                <li>
+                  交流<br>
+                  大きさと方向が時間の経過と共に変化する電圧や電流を交流という．交流には，正弦波交流とひずみ波交流に分類される．一般に，家庭や事業所に供給される商用電源は正弦波交流である．
+                </li>
+              </ul>
+              交流を表現する要素
+              <ol>
+                <li>大きさ（最大値）</li>
+                <li>波形</li>
+                <li>角速度(角周波数)</li>
+                <li>位相</li>
+              </ol>
+              以上4つを交流の基本性質という．この交流の4つの基本性質を1つの式の中に全て含んだ式を瞬時値の式という．ある時刻<span class="formula">t</span>における正弦波交流の瞬時値は，以下の式で表される．
+              <div class="formula">
+                e = E<sub>m</sub>sin ( &omega; t + &phi; ) <br>
+                E<sub>m</sub>: 大きさ（最大値），sin: 波形, &omega;: 角速度(角周波数), &phi;: 位相
+              </div>
+              例）
+              <div class="formula">
+                e = 100<sub>m</sub>sin ( &omega; t + &phi; )
+              </div>
+              の交流波形がある．この式から解ることは，最大値は100Vで，波形は正弦波である．<br>
+              交流の変化の速さを表すには，次の2つのいずれかを用いる．
+              <ol>
+                <li>
+                  周波数<br>
+                  単位時間（1秒間）に同じ変化を何度繰り返すかの回数．
+                </li>
+                <li>
+                  周期<br>
+                  1回の変化を完了するのに要する時間．周波数の量記号はf，単位はヘルツ，単位記号は[Hz]を用いる．
+                </li>
+              </ol>
+              周期の量記号はT，単位は秒，単位記号は[s]を用いる
+              <table class="formula">
+                <tr>
+                  <td>T</td>
+                  <td>=</td>
+                  <td>1 / f</td>
+                  <td> [ s ]</td>
+                </tr>
+                <tr>
+                  <td>f</td>
+                  <td>=</td>
+                  <td>1 / T</td>
+                  <td>[ Hz ]</td>
+                </tr>
+              </table>
+            </div>
+            </div>
+
+          <div class="section">
+            <h4>弧度法</h4>
+            <div class="subsection">
+              角速度&omega;や位相&phi;は，瞬時値の式では<span class="formula">sin ( &omega;t + &phi; )</span>のようになっているので，<span class="formula">&omega;t</span>や<span class="formla">&phi;</span>は角度で表示する．<span class="formula">sin</span>で表される正弦波交流は360&deg;の周期で同じ変化を繰り返している．1周期は角度で表すと360&deg;である．一般に，角度を表す方法には，度数法と弧度法がある．度数法と弧度法には以下の関係がある．
+              <div class="formula">360&deg; = 2 &pi; [ rad ]</div>
+            </div>
+            <div class="subsection">
+              <h5>問題</h5>
+              <div>次の瞬時値の最大値，周波数を求めよ</div>
+              <table class="formula">
+                <tr>
+                  <td>e<sub>1</sub></td>
+                  <td>=</td>
+                  <td>100 sin ( 100 &pi;t ) [ V ]</td>
+                </tr>
+                <tr>
+                  <td>2&pi;f</td>
+                  <td>=</td>
+                  <td>100&pi;</td>
+                </tr>
+                <tr>
+                  <td>f</td>
+                  <td>=</td>
+                  <td>100&pi / 2&pi;</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>=</td>
+                  <td>50 [ Hz ]</td>
+                </tr>
+              </table>
+              &there4;最大値: 100V, 周波数: 50Hz
+              <table class="formula">
+                <tr>
+                  <td>e<sub>2</sub></td>
+                  <td>=</td>
+                  <td>200 sin ( 120 &pi;t ) [ V ]</td>
+                </tr>
+                <tr>
+                  <td>2&pi;f</td>
+                  <td>=</td>
+                  <td>120&pi;</td>
+                </tr>
+                <tr>
+                  <td>f</td>
+                  <td>=</td>
+                  <td>120&pi / 2&pi;</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>=</td>
+                  <td>60 [ Hz ]</td>
+                </tr>
+              </table>
+              &there4;最大値: 200V, 周波数: 60Hz
+            </div>
+          </div><!-- section -->
+          <div class="section">
+            <h4>位相</h4>
+            <div class="subsection">
+              同じ波形でも，時間的なズレを位相差という．これも角度で表現する．
+            </div>
+          </div>
         </div><!-- chapter -->
       </div><!-- part -->
     </div>  <!-- htmlWrap -->
@@ -1332,7 +1817,9 @@
 
     <script>
 
-      window.addEventListener ( "load" , init , false );
+      window.addEventListener ( "load", init, false );
+      let DATE = new Date ();
+      setInterval ( function () { DATE = new Date (); }, 1000 );
 
       function init () {
 
@@ -1342,6 +1829,7 @@
 
         judge_fuckDevice ();
         set_date ( dom.date );
+        setInterval ( function () {set_date ( dom.date );} , 1000 );
         set_tblNum ();
         set_figNum ();
 
@@ -1373,18 +1861,16 @@
 
         function set_date ( dom ) {
 
-          let date = new Date ();
-
           let format = {
 
-            yyyy : date.getFullYear (),
-            MM : ( "00" + ( date.getMonth () + 1 ) ).slice ( -2 ),
-            dd : ( "00" + date.getDate () ).slice ( -2 ),
+            yyyy : DATE.getFullYear (),
+            MM : ( "00" + ( DATE.getMonth () + 1 ) ).slice ( -2 ),
+            dd : ( "00" + DATE.getDate () ).slice ( -2 ),
             day : function () {
 
               let aaa;
 
-              switch ( date.getDay() ) {
+              switch ( DATE.getDay() ) {
                 case 0:
                   aaa = "Sun";
                   break;
@@ -1411,9 +1897,9 @@
               }
               return aaa;
             },
-            HH : ( "00" + date.getHours () ).slice ( -2 ),
-            mm : ( "00" + date.getMinutes () ).slice ( -2 ),
-            ss : ( "00" + date.getSeconds () ).slice ( -2 ),
+            HH : ( "00" + DATE.getHours () ).slice ( -2 ),
+            mm : ( "00" + DATE.getMinutes () ).slice ( -2 ),
+            ss : ( "00" + DATE.getSeconds () ).slice ( -2 ),
           };
 
           dom.innerHTML = format.yyyy + "/" + format.MM + "/" + format.dd + " (" + format.day () + "), " + format.HH + ":" + format.mm + ":" + format.ss;

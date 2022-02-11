@@ -65,6 +65,10 @@ This is notebook on Survey of Electric, Department of Mechanical CAD Design at T
 
 ### version info
 
+#### [2022-02-11](https://github.com/UtusemiUltimate-of-the-darkness/survey-of-Electric-notebook/tree/2022-02-11)
+
+- part3 AC circuit
+
 #### [2021-10-25](https://github.com/UtusemiUltimate-of-the-darkness/survey-of-Electric-notebook/tree/2021-10-25)
 
 - 2.4. Series connection of resistors.
