@@ -1,3 +1,4 @@
+<head>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 <script type="text/x-mathjax-config">
  MathJax.Hub.Config({
@@ -7,7 +8,7 @@
          }
           });
  </script>
-
+</head>
 
 #  電気概論 第1回(10/11)
 
